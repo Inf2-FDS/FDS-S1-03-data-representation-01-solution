@@ -1,0 +1,345 @@
+\documentclass[10,a4paper]{article}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in,showframe]{geometry}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\highlight}[1]{{\color{red}\textbf{1}}}
+
+\begin{document}
+\sffamily
+
+\begin{center}
+  \textbf{Inf2 -- Foundations of Data Science: Font size demo}
+\end{center}
+\noindent The paper size is A4, 297mm (11.69in) high and 210mm
+(8.27in) wide. The margins are 1in wide.
+
+\vspace*{1em}\centering\framebox(6in,4in){
+  \begin{minipage}{6in}
+
+This box is specified to be 6in wide and 4in high, the default size
+of figure in Matplotlib.
+
+\vspace{0.7\baselineskip}
+
+This text is written with a font size of 10 points (10pt), the default
+font size in Matplotlib.
+
+\vspace{0.7\baselineskip}
+
+Below each box is 10 points high by 10 points
+wide and is big enough to contain a character in a 10pt font size.
+``M'' is shown as its the widest capital letter.
+
+\vspace{0.7\baselineskip}
+
+  \framebox(10pt, 10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt,
+10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt, 10pt){M}\framebox(10pt, 10pt){M}
+
+\vspace{0.7\baselineskip}
+
+A point is defined as 1/72 of an inch, so we would expect 6/(10/72)=43
+characters to fit in a line 6 inches wide.
+
+\vspace{0.7\baselineskip}
+
+43 10pt characters do indeed fit in a 6in wide line (the numbers
+should help us to count)
+
+\vspace{0.7\baselineskip}
+
+\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\noindent\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\noindent\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\noindent\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}
+
+\vspace{0.7\baselineskip}
+
+Suppose we're having problems squeezing text into the plot, so we want
+to make the font smaller to fit more characters in a line. Journals (e.g.~\href{https://journals.plos.org/plosone/s/figures\#loc-text-within-figures}{PLOS},
+\href{https://apastyle.apa.org/style-grammar-guidelines/paper-format/font}{American
+  Psychology Association})
+typically suggest a minimum font size around 8pt, which is a bit
+smaller than the font used in the main text.
+
+\vspace{0.7\baselineskip}
+
+\fontsize{9}{9}\selectfont
+
+This text is in 9pt. 48 9pt characters fit in a line 6in wide
+
+\vspace{0.7\baselineskip}
+
+\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\noindent\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\noindent\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\noindent\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}
+
+\vspace{0.7\baselineskip}
+
+This text is in 8pt. 54 8pt characters fit in a line 6in wide.
+
+\vspace{0.7\baselineskip}
+
+\fontsize{8}{8}\selectfont
+
+\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\noindent\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\noindent\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\noindent\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}
+
+
+\end{minipage}}
+
+\vspace{0.5\baselineskip}
+
+\raggedright
+The box below was specified to be 12in wide and 8in high, to simulate
+making a figure with \texttt{figsize=(12,8)} in Matplotlib, a common
+strategy to make text fit into a crowded figure. When included in the
+document, the figure has been scaled to be 6in wide and 4in high, so
+it's shrunk by a factor of two.
+
+\vspace{0.5\baselineskip}
+
+\centering\resizebox{6in}{4in}{\framebox(12in,8in){
+    \begin{minipage}{12in}
+
+      \fontsize{10}{10}\selectfont
+This text is written with a font size of 10 points (10pt), the default
+font size in Matplotlib. But here it's effectively 5pt, because of the
+shrinkage due to including the document.
+
+\vspace{0.7\baselineskip}
+
+A point is defined as 1/72 of an inch, so we would expect 12/(10/72)=86
+characters to fit in a line 12 inches wide.
+
+\vspace{0.7\baselineskip}
+
+86 10pt characters did indeed fit in a 12in wide line (the numbers
+should help us to count). Yay! We can fit we more characters in. But
+can we read them, now that they are effectively 5pt?
+
+\vspace{0.7\baselineskip}
+
+\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\noindent\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\noindent\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\noindent\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\noindent\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\noindent\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\noindent\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}\framebox(10pt, 10pt){7}\framebox(10pt,
+10pt){8}\framebox(10pt, 10pt){9}\framebox(10pt, 10pt){0}\framebox(10pt, 10pt){\highlight{1}}\framebox(10pt,
+10pt){2}\framebox(10pt, 10pt){3}\framebox(10pt,
+10pt){4}\framebox(10pt, 10pt){5}\framebox(10pt,
+10pt){6}
+
+\vspace{0.7\baselineskip}
+
+\vspace{0.7\baselineskip}
+
+\fontsize{9}{9}\selectfont
+
+This text is in 9pt. 96 9pt characters fit in a line 12in wide. But
+it's actually 48 4.5pt characters in 6in.
+
+\vspace{0.7\baselineskip}
+
+\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\noindent\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\noindent\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\noindent\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\noindent\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\noindent\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\noindent\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\noindent\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}\framebox(9pt, 9pt){7}\framebox(9pt,
+9pt){8}\framebox(9pt, 9pt){9}\framebox(9pt, 9pt){0}\framebox(9pt, 9pt){\highlight{1}}\framebox(9pt,
+9pt){2}\framebox(9pt, 9pt){3}\framebox(9pt,
+9pt){4}\framebox(9pt, 9pt){5}\framebox(9pt,
+9pt){6}
+
+
+\vspace{0.7\baselineskip}
+
+This text is in 8pt.  108 8pt characters fit in a line 12in wide. But
+due to the shrinkage, it's actually 108 4pt characters fit in a line 6in wide.
+
+\vspace{0.7\baselineskip}
+
+\fontsize{8}{8}\selectfont
+
+\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\noindent\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\noindent\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\noindent\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\noindent\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\noindent\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\noindent\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}\framebox(8pt, 8pt){9}\framebox(8pt, 8pt){0}\framebox(8pt, 8pt){\highlight{1}}\framebox(8pt,
+8pt){2}\framebox(8pt, 8pt){3}\framebox(8pt,
+8pt){4}\framebox(8pt, 8pt){5}\framebox(8pt,
+8pt){6}\framebox(8pt, 8pt){7}\framebox(8pt,
+8pt){8}
+
+\end{minipage}}}
+
+
+
+\end{document}
